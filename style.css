@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+      background-color:  #FFCEA6;
+      color:#50A4B3 ;
+      font-family: "poppins", sans-serif;
+      min-height: 100vh;
+}
+
+header,form  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+ .todo-input, form button {
+     padding: 1.5rem;
+     font-size: 2rem;
+     border: none;
+     background: #ffffff;
+     
+ }
+
+ form button {
+     color: rgb(22, 28, 29);
+     background: #ffffff;
+     cursor: pointer;
+     transition: all 0.3s ease;
+
+ }
+
+ form button :hover{
+     background: #50A4B3;
+     color: #ffffff;
+
+ }
+
+ .todo-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    margin: 20px; 
+    font-size: 30px;
+
+ }
+
+ .fa-trash, fa-check{
+     pointer-events: none;
+
+ }
+
+.remove {
+    visibility: none;
+}
