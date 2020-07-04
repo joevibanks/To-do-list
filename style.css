@@ -19,18 +19,21 @@ header,form  {
 }
 
  .todo-input, form button {
-     padding: 1.5rem;
-     font-size: 2rem;
+     padding: 1rem;
+     font-size: 25px;
      border: none;
-     background: #ffffff;
+     background: rgb(247, 248, 248);
+     width: 250px;
+     color: #ffffff ;
      
  }
 
  form button {
-     color: rgb(22, 28, 29);
-     background: #ffffff;
+     color: #50A4B3;
+     background: rgb(255, 255, 255);
      cursor: pointer;
      transition: all 0.3s ease;
+     width: 50px;
 
  }
 
@@ -50,12 +53,32 @@ header,form  {
     font-size: 30px;
 
  }
-
- .fa-trash, fa-check{
-     pointer-events: none;
-
+ .todo-list{
+     min-width: 30%;
+     list-style: none;
  }
 
+ .fa-trash, .fa-check{
+     pointer-events: none;
+     /* width: 50px; */
+
+ }
+ .fa-trash{
+     
+     
+ }
+.fa-check{
+
+}
 .remove {
     visibility: none;
+}
+.todo{
+    font-size: 0.8em;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.todo li{
+    flex: 1;
 }
