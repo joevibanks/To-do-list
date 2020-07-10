@@ -10,11 +10,28 @@ const bootstrapCard = val => {
 </div></div>`
 };
 
+// ES5 - Old Javascript
+
 fetch(`https://randomuser.me/api/?results=10`)
-    .then(res => res.json())
-    .then(data => {
-        data.results.map((val => {
+    .then(function(pant) {
+        return pant.json()
+    })
+    .then(function(userData){
+        userData.results.map((val => {
             document.getElementById('user-list').innerHTML += bootstrapCard(val);
         }))
     })
-    .catch(err => console.log(err))
+    .catch(function(error){
+        alert('Hey You have an Error', error);
+    })
+
+// ES 6 - New Javascript
+
+// fetch(`https://randomuser.me/api/?results=10`)
+//     .then(pant => pant.json())
+//     .then(userData => {
+//         userData.results.map((val => {
+//             document.getElementById('user-list').innerHTML += bootstrapCard(val);
+//         }))
+//     })
+//     .catch(err => console.log(err))
